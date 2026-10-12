@@ -10,7 +10,7 @@
 pip install langchain-pink
 ```
 
-The PyPI release is on its way. Until it is live, install both packages from GitHub:
+Or install both packages straight from GitHub:
 
 ```bash
 pip install "pink-agentic-payments @ git+https://github.com/Pink-Agentic-Payments/pink-agentic-payments-python" \
