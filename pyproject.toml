@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-pink"
+version = "0.1.0"
+description = "LangChain tools for Pink Agentic AI Payments: let agents request payments within company spending rules."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "PinkWallet", email = "support@pinkwallet.com" },
+]
+keywords = ["langchain", "agent", "payments", "mcp", "ai-agent", "pinkwallet"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "langchain-core>=0.3,<2.0",
+    "pink-agentic-payments>=0.1.0",
+    "pydantic>=2,<3",
+]
+
+[project.urls]
+Homepage = "https://pinkwallet.com/agentic/developers/"
+Documentation = "https://pinkwallet.com/agentic/developers/"
+Source = "https://github.com/Pink-Agentic-Payments/langchain-pink"
+Repository = "https://github.com/Pink-Agentic-Payments/langchain-pink"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7",
+    "langchain-tests>=0.3",
+    "langgraph>=0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
